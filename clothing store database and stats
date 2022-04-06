@@ -1,0 +1,39 @@
+/** Clothing store:
+Shirts (10)
+Pants (7)
+Sandals (15)
+Boots (5)
+Dresses (11)
+Belts (9)
+Shorts (12)
+Earings (10)
+Necklaces (3)
+Lashes (4)
+Hats (13)
+Jackets (6)
+Socks (3)
+Vests (8)
+Sweaters (3)
+**/ 
+
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name text, quantity integer, price integer, aisle integer);
+
+INSERT INTO clothing VALUES (1, "shirts", 10, 10, 3);
+INSERT INTO clothing VALUES (2, "pants", 7, 30, 9);
+INSERT INTO clothing VALUES (3, "sandals", 15, 15, 4);
+INSERT INTO clothing VALUES (4, "boots", 5, 25, 6);
+INSERT INTO clothing VALUES (5, "dresses", 11, 15, 9);
+INSERT INTO clothing VALUES (6, "belts", 9, 25, 12);
+INSERT INTO clothing VALUES (7, "shorts", 12, 13, 8);
+INSERT INTO clothing VALUES (8, "earings", 10, 2, 12);
+INSERT INTO clothing VALUES (9, "necklaces", 3, 5, 12);
+INSERT INTO clothing VALUES (10, "lashes", 4, 5, 1);
+INSERT INTO clothing VALUES (11, "hats", 13, 25, 2);
+INSERT INTO clothing VALUES (12, "jackets", 6, 30, 7);
+INSERT INTO clothing VALUES (13, "socks", 3, 3, 10);
+INSERT INTO clothing VALUES (14, "vests", 8, 20, 7);
+INSERT INTO clothing VALUES (15, "sweaters", 3, 15, 7);
+
+SELECT * FROM clothing ORDER BY price;
+
+SELECT max(price) FROM clothing; 
