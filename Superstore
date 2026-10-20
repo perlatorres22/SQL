@@ -1,0 +1,14 @@
+SELECT item_name, price
+FROM superstore
+ORDER BY price;
+
+SELECT MAX(item_name)
+FROM superstore;
+
+SELECT AVG(price)
+FROM superstore 
+WHERE category = 'Kitchen Supplies';
+
+SELECT item_name, average_rating
+FROM superstore
+ORDER BY average_rating asc;
